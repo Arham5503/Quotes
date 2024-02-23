@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotations</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        section {
+            /* background-color:rgba(27, 143, 238, 0.678); */
+            background-image: url('/wide-angle.jpg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .p {
+            width: 350px;
+            height: 200px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 5px 5px 8px 5px rgba(30, 10, 2, 0.5);
+            opacity: 0.9;
+        }
+
+        .inner {
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid black;
+            min-height: 130px;
+        }
+
+        h1 {
+            padding-top: 20px;
+
+        }
+
+        .grow2 {
+            min-height: 70px;
+            padding-top: 10px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            background-color: rgba(27, 143, 238, 0.678);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="p">
+                <div class="inner">
+                    <h1>
+
+                    </h1>
+                </div>
+                <div class="grow2">
+                    <center>
+                        <button onclick="a()">Quote</button>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const a = () => {
+            let str = ["The only way to do great work is to love what you do."
+                , "In the midst of chaos, there is also opportunity."
+                , "Believe you can and you're halfway there."
+                , "The journey of a thousand miles begins with a single step."
+                , "Success is not final, failure is not fatal: It is the courage to continue that counts."
+                , "Dream big, work hard, stay focused."
+                , "The future belongs to those who believe in the beauty of their dreams."
+                , "Your attitude determines your direction."
+                , "The only limit to our realization of tomorrow will be our doubts of today."
+                , "Don't watch the clock; do what it does. Keep going."
+                , "The only thing standing between you and your goal is the story you keep telling yourself."
+                , "It always seems impossible until it's done."
+                , "Success is not in what you have, but who you are."
+                , "Life is what happens when you're busy making other plans."
+                , "The best way to predict the future is to create it."
+                , "Be yourself; everyone else is already taken."
+                , "Don't count the days, make the days count."
+                , "You miss 100% of the shots you don't take."
+                , "The only person you are destined to become is the person you decide to be."
+                , "Life is 10% what happens to us and 90% how we react to it."
+                , "Strive not to be a success, but rather to be of value."
+                , "You are never too old to set another goal or to dream a new dream."
+                , "The greatest glory in living lies not in never falling, but in rising every time we fall."
+                , "Opportunities don't happen. You create them."
+                , "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart."
+                , "Happiness is not by chance, but by choice."
+                , "The harder you work for something, the greater you'll feel when you achieve it."
+                , "Success is not just about making money. It's about making a difference."
+                , "Don't wait. The time will never be just right."
+                , "Do not wait to strike till the iron is hot, but make it hot by striking."
+                , "It's not about how hard you hit. It's about how hard you can get hit and keep moving forward."
+                , "Your time is limited, don't waste it living someone else's life."
+                , "Success usually comes to those who are too busy to be looking for it."
+                , "The only place where success comes before work is in the dictionary."  
+                , "Challenges are what make life interesting. Overcoming them is what makes life meaningful."
+                , "Don't be afraid to give up the good to go for the great." 
+                , "Don't let yesterday take up too much of today." 
+                , "In three words, I can sum up everything I've learned about life: it goes on."
+                , "The purpose of our lives is to be happy." 
+                , "You can never cross the ocean until you have the courage to lose sight of the shore." 
+                , "You may have to fight a battle more than once to win it."
+                , "Don't worry about failures, worry about the chances you miss when you don't even try." 
+                , "A person who never made a mistake never tried anything new." - 
+                , "The only way to achieve the impossible is to believe it is possible."Albert Einstein - Charles Kingsleigh(Lewis Carroll)
+                , "The only thing worse than being blind is having sight but no vision." - Helen Keller
+                , "The only true wisdom is in knowing you know nothing." - Socrates
+                , "If you want to achieve greatness stop asking for permission." - Unknown
+                , "Don't let the fear of losing be greater than the excitement of winning." - Robert Kiyosaki
+                , "The secret of getting ahead is getting started." - Mark Twain
+                , "The only limit to our realization of tomorrow is our doubts of today." - Franklin D.Roosevelt
+                , "Don't be afraid to give up the good to go for the great." - John D.Rockefeller
+                , "Don't let yesterday take up too much of today." - Will Rogers
+                , "In three words I can sum up everything I've learned about life: it goes on." - Robert Frost
+                , "The purpose of our lives is to be happy." - Dalai Lama
+                , "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart." - Roy T.Bennett
+                , "Life is what happens when you're busy making other plans." - Allen Saunders
+                , "You can never cross the ocean until you have the courage to lose sight of the shore." - Christopher Columbus
+                , "Success is not in what you have, but who you are." - Bo Bennett
+                , "You are never too old to set another goal or to dream a new dream." - C.S.Lewis
+                , "Happiness is not by chance, but by choice." - Jim Rohn
+                , "The best way to predict the future is to create it." - Peter Drucker
+                , "The only person you are destined to become is the person you decide to be." - Ralph Waldo Emerson
+                , "The only limit to our realization of tomorrow will be our doubts of today." - Franklin D.Roosevelt
+                , "Don't be afraid to give up the good to go for the great." - John D.Rockefeller
+                , "Don't let yesterday take up too much of today." - Will Rogers
+                , "In three words, I can sum up everything I've learned about life: it goes on." - Robert Frost
+                , "The purpose of our lives is to be happy." - Dalai Lama]
+            let auther = ["Steve Jobs", "Sun Tzu", "Theodore Roosevelt"
+                , "Lao Tzu", "Winston Churchill", "Unknown",
+                "Eleanor Roosevelt", "Unknown", "Franklin D.Roosevelt", "Sam Levenson"
+                , "Jordan Belfort", "Nelson Mandela",
+                "Bo Bennett", "Allen Saunders", "Peter Drucker", "Oscar Wilde", "Muhammad Ali", "Wayne Gretzky"
+                , "Ralph Waldo Emerson", "Charles R.Swindoll", "Albert Einstein"
+                , "C.S. Lewis",
+                "Chris Grosser",
+                "Jim Rohn",
+                "Nelson Mandela",
+                "Roy T. Bennett",
+                "Unknown",
+                "Unknown",
+                "Napoleon Hill",
+                "William Butler Yeats",
+                 "Sylvester Stallone",
+                ,"Henry David Thoreau"
+                ,"Vidal Sassoon"
+                ,"Joshua J.Marine"
+                ,"John D.Rockefeller"
+                ,"Will Rogers" 
+                ,"Robert Frost"
+                ,"Dalai Lama",
+                "Christopher Columbus",
+                "Margaret Thatcher",
+                "Jack Canfield"]
+            let cp = Math.floor(Math.random() * str.length - 1)
+            let dd = str[cp];
+            let abb = document.getElementsByTagName('h1')
+            abb[0].innerHTML = '“' + dd + '”';
+            console.log(dd)
+        }
+    </script>
+</body>
+
+</html>
